@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Han+Sans&family=Fira+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 75%, rgba(0,0,0,1) 100%), url(/src/img/salento.png);
+    background-size: 100vw;
+    background-position-y: -110px;
+    background-repeat: no-repeat;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    background: rgb(77,72,74);
+    background: linear-gradient(0deg, rgba(77,72,74,0.309983368347339) 0%, rgba(0,0,0,1) 100%);
+    margin-top: 14rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(77,76,76);
+    background: linear-gradient(0deg, rgba(77,76,76,0.4808517156862745) 0%, rgba(0,0,0,1) 100%);
+}
+
+
+h1 {
+    color: #9411C2;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 10rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+h2 {
+    font-family: 'Fira Mono', monospace;
+    color: aliceblue;
+    text-align: left;
+    margin: 0px 10px;
+}
+
+p {
+    font-family: 'Fira Mono', monospace;
+    font-size: 1.3rem;
+    color: aliceblue;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline;
+    text-decoration-color: aliceblue;
+    text-decoration-thickness: 5%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0px 10px 10px;
+    font-family: 'Fira Mono', monospace;
+    font-size: 1.3rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+footer li {
+    margin: 5px;
+}
+
+main {
+    margin-left: 3rem;
+}
+
+.subtitle {
+    margin-top: 9.2rem;
+    display: flex;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
