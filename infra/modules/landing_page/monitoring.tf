@@ -6,6 +6,14 @@ resource "google_monitoring_notification_channel" "brian_email" {
   }
 }
 
+resource "google_monitoring_notification_channel" "nohe_email" {
+  display_name = "${local.env} Nohelia email notification Channel"
+  type         = "email"
+  labels = {
+    email_address = "nohe.noeh@gmail.com"
+  }
+}
+
 resource "google_monitoring_uptime_check_config" "landing_page" {
   display_name = "${local.env}-${local.base_domain}-uptime-check"
   timeout      = "60s"
@@ -28,7 +36,8 @@ resource "google_monitoring_uptime_check_config" "landing_page" {
 resource "google_monitoring_alert_policy" "landing_page" {
   display_name = "${local.env} ${local.base_domain} Uptime Alert Policy"
   notification_channels = [
-    google_monitoring_notification_channel.brian_email.id
+    google_monitoring_notification_channel.brian_email.id,
+    google_monitoring_notification_channel.nohe_email.id,
   ]
   combiner       = "OR"
   conditions {
