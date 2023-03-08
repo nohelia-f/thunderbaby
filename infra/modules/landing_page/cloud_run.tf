@@ -51,15 +51,17 @@ resource "google_cloud_run_domain_mapping" "www" {
   }
 }
 
-# resource "google_cloud_run_domain_mapping" "base" {
-#   location = local.primary_region
-#   name     = "${local.base_domain}"
+# Only add this for the prod env
+resource "google_cloud_run_domain_mapping" "base" {
+  count = local.env == "prod" ? 1 : 0
+  location = local.primary_region
+  name     = local.base_domain
 
-#   metadata {
-#     namespace = data.google_project.project.project_id
-#   }
+  metadata {
+    namespace = data.google_project.project.project_id
+  }
 
-#   spec {
-#     route_name = google_cloud_run_v2_service.landing_page.name
-#   }
-# }
+  spec {
+    route_name = google_cloud_run_v2_service.landing_page.name
+  }
+}
