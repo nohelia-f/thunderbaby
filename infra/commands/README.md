@@ -1,0 +1,1 @@
+Manually update nginx.conf and build sh file before deploying! These need to be pointing to the correct destinations etc.
