@@ -104,7 +104,6 @@ main {
 .subtitle {
     margin-top: 9.2rem;
     display: flex;
-
 }
 
 footer {
@@ -114,6 +113,9 @@ footer {
     background-color: #131214;
 }
 
+.find-us-nav {
+     margin-bottom: 5rem;
+ }
 
 .findus-ul {
         color: aliceblue;
@@ -130,25 +132,32 @@ footer {
 
 @media only screen and (max-width: 920px) {
 
-    main {
-        margin-left: .5rem;
-    }
-
    #header h1 {
         font-size: 12vw;
+        margin: 0rem 0rem 3rem 0rem;
+    }
+
+    .container {
+        position: absolute;
+        top: 10vh;
+        align-self: center;
     }
 }
 
 @media screen and (max-width: 780px) {
 
-    main {
-            padding-left: 1rem;
-        }
-
-    .find-us-nav {
-        margin-bottom: 4rem;
+    main {  
+        margin: 0;
+        padding-left: 1rem;
     }
 
+    p {
+        padding-left: 1rem;
+    }
+
+    .subtitle {
+        margin: 0;
+    }
     .findus-ul {
         text-align: center;
         display: flex;
