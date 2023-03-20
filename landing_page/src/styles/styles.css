@@ -8,7 +8,7 @@
 body {
     background-color: #131214;
     background-image: url(/src/img/salento.png);
-    background-size: 100% auto;
+    background-size: 100%;
     background-position-y: -110px;
     background-repeat: no-repeat;
     margin: 0px;
@@ -129,21 +129,21 @@ footer {
 
 
 @media only screen and (max-width: 920px) {
-    
-    body {
-        background-position-y: 0;
-    };
+
+    main {
+        margin-left: .5rem;
+    }
 
    #header h1 {
-        font-size: 7vw;
+        font-size: 12vw;
     }
 }
 
 @media screen and (max-width: 780px) {
 
-    #header h1 {
-        font-size: 5vw;
-    }
+    main {
+            padding-left: 1rem;
+        }
 
     .find-us-nav {
         margin-bottom: 4rem;
@@ -153,12 +153,14 @@ footer {
         text-align: center;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-left: 0;
     }
 
     .findus-ul li {
         list-style: none;
         padding: 1rem;
-        gap: 0;
+        margin: 0px 10px 10px 0px;
     }
 
     footer ul {
