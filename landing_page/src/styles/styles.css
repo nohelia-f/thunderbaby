@@ -111,6 +111,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #131214;
 }
 
 
@@ -134,15 +135,34 @@ footer {
     };
 
    #header h1 {
-        background-color: greenyellow 4px solid;
-        font-size: 8vw;
+        font-size: 7vw;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
 
     #header h1 {
         font-size: 5vw;
+    }
+
+    .find-us-nav {
+        margin-bottom: 4rem;
+    }
+
+    .findus-ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .findus-ul li {
+        list-style: none;
+        padding: 1rem;
+        gap: 0;
+    }
+
+    footer ul {
+        margin-right: .5rem;
     }
 }
 
