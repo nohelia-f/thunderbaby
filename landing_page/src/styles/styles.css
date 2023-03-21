@@ -61,6 +61,7 @@ p {
     margin-top: 1rem;
     margin-bottom: 2rem;
     width: 80%;
+    padding-left: 1rem;
 }
 
 a {
@@ -98,7 +99,7 @@ footer ul {
 }
 
 main {
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .subtitle {
@@ -121,11 +122,12 @@ footer {
         color: aliceblue;
         text-align: center;
         display: flex;
+        margin: 0;
+        padding: 0;
 }
 
 .findus-ul li {
     list-style: none;
-    padding: 2rem;
     gap: 6rem;
 }
 
@@ -142,16 +144,16 @@ footer {
         top: 10vh;
         align-self: center;
     }
+
+    .find-us-nav {
+        margin-bottom: 6rem;
+    }
 }
 
 @media screen and (max-width: 780px) {
 
     main {  
         margin: 0;
-        padding-left: 1rem;
-    }
-
-    p {
         padding-left: 1rem;
     }
 
