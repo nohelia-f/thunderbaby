@@ -148,6 +148,10 @@ footer {
 
 @media screen and (max-width: 780px) {
 
+    body {
+        background-image: url(/src/img/salento-small.png);
+    }
+
     main {  
         margin: 0;
         padding-left: 1rem;
@@ -175,4 +179,6 @@ footer {
     }
 }
 
+
+/* Version: 23.03.v1 */
 
